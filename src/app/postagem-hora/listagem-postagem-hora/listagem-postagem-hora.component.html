@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="my-5" *ngIf="postagemHora">Data de Execução da Coleta das Mensagens: {{postagemHora[0].dataExecucao | date:'dd/MM/yyyy HH:mm' }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let postagemHora of postagemHora">
+            <td>{{postagemHora.data | date:'dd/MM/yyyy' }}</td>
+            <td>{{postagemHora.hora}}</td>
+            <td>{{postagemHora.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

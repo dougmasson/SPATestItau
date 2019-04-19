@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="my-5" *ngIf="postagemIdioma">Data de Execução da Coleta das Mensagens: {{postagemIdioma[0].dataExecucao | date:'dd/MM/yyyy HH:mm' }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#Tag</th>
+            <th scope="col">Idioma/País</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let postagemIdioma of postagemIdioma">
+            <td>{{postagemIdioma.descricao}}</td>
+            <td>{{postagemIdioma.idioma}}</td>
+            <td>{{postagemIdioma.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

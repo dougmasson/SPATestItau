@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="my-5" *ngIf="usuariosSeguidores">Data de Execução da Coleta das Mensagens: {{usuariosSeguidores[0].dataExecucao | date:'dd/MM/yyyy HH:mm' }}</h2>
+     </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Ranking</th>
+            <th scope="col">Usuário</th>
+            <th scope="col">Quantidade de  Seguidores</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuarios of usuariosSeguidores">
+              <td>{{usuarios.num}}°</td>
+            <td>{{usuarios.usuario}}</td>
+            <td>{{usuarios.qtdSeguidores}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
