@@ -20,5 +20,4 @@ export class ListagemUsuariosComponent implements OnInit {
     this.usuariosSeguidoresService.getUsuarios()
       .subscribe(usuariosSeguidores => this.usuariosSeguidores = usuariosSeguidores);
   }
-
 }

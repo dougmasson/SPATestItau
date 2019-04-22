@@ -12,4 +12,5 @@ import { ListagemPostagemHoraComponent } from './listagem-postagem-hora/listagem
     PostagemHoraRoutingModule
   ]
 })
+
 export class PostagemHoraModule { }

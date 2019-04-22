@@ -17,4 +17,5 @@ export class PostagemHoraService {
   getPostagemHora(): Observable<PostagemHora[]> {
     return this.http.get<PostagemHora[]>(this.apiUrl);
   }
+
 }

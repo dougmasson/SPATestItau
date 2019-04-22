@@ -17,4 +17,6 @@ export class PostagemIdiomaService {
   getPostagemIdioma(): Observable<PostagemIdioma[]> {
     return this.http.get<PostagemIdioma[]>(this.apiUrl);
   }
+
+
 }

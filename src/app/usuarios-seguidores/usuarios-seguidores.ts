@@ -4,3 +4,4 @@ export interface UsuariosSeguidores {
   qtdSeguidores: number;
   dataExecucao: string;
 }
+

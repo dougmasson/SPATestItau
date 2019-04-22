@@ -6,4 +6,3 @@ export interface PostagemHora {
   hora: string,
   total: number,
 }
-

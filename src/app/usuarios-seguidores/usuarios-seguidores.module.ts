@@ -12,4 +12,5 @@ import { ListagemUsuariosComponent } from './listagem-usuarios/listagem-usuarios
     UsuariosSeguidoresRoutingModule
   ]
 })
+
 export class UsuariosSeguidoresModule { }
